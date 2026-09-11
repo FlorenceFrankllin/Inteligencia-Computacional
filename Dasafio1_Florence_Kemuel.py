@@ -1,8 +1,3 @@
-#Aluno(a): Florence Franklin Jeronimo 
-#Aluno: Kemuel Santos Peres
-
-#Desafio_1
-
 import math
 import time
 import torch
@@ -58,17 +53,17 @@ class Submissao:
     def phi(self, X: torch.Tensor) -> torch.Tensor:
         Xs = (X - self.mu) / self.sd
 
-        # 1. Feature de Raio (Soma dos quadrados). 1 única dimensão mata círculos e esferas!
+        # 1. Calcula a norma quadrática
         raio_quadrado = (Xs ** 2).sum(dim=1, keepdim=True)
 
         parts = [Xs, raio_quadrado]
 
-        # 2. Feature de Produto Cruzado. 1 única dimensão mata o XOR!
+        # 2. Termo de produto cruzado entre as duas primeiras variáveis de entrada
         if self.use_cross:
             cross = (Xs[:, 0] * Xs[:, 1]).unsqueeze(1)
             parts.append(cross)
 
-        # 3. RFF para matar Luas e Espiral (usando float64 p/ blindar o determinismo)
+        # 3. Projeções de Fourier Multiescala (Random Fourier Features - RFF), blindar o determinismo)
         Xs_64 = Xs.double()
         W_64 = self.W.double()
         b_64 = self.b.double()
