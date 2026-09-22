@@ -1,4 +1,4 @@
-# 🧠 Inteligência Computacional (GBC073)
+# 🧠 Inteligência Computacional 
 
 Repositório dedicado ao desenvolvimento, estudo teórico e resolução de projetos práticos da disciplina de **Inteligência Computacional (GBC073)** da Faculdade de Computação (FACOM) da **Universidade Federal de Uberlândia (UFU)**.
 
