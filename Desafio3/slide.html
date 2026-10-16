@@ -10,6 +10,7 @@
       --verde: #1E8E5A;
       --carmim: #B3121B;
       --dourado: #E9A100;
+      --roxo: #6B21A8;
       --cinza-bg: #F8FAFC;
       --card-bg: #FFFFFF;
       --borda: #CBD5E1;
@@ -18,14 +19,14 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    body { background: #0E1526; color: var(--texto); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 12px; }
+    body { background: #0E1526; color: var(--texto); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 10px; }
 
     .slide {
       width: 1480px;
       height: 830px;
       background: var(--card-bg);
       border-radius: 12px;
-      padding: 24px 34px;
+      padding: 16px 26px;
       display: flex;
       flex-direction: column;
       box-shadow: 0 15px 35px rgba(0,0,0,0.3);
@@ -37,22 +38,22 @@
       justify-content: space-between;
       align-items: flex-start;
       border-bottom: 2px solid var(--borda);
-      padding-bottom: 12px;
-      margin-bottom: 14px;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
     }
 
-    .alunos { font-size: 14px; line-height: 1.35; color: var(--azul-escuro); font-weight: 500; }
+    .alunos { font-size: 12.5px; line-height: 1.3; color: var(--azul-escuro); font-weight: 500; }
     .alunos b { font-weight: 700; }
     .titulo-bloco { text-align: center; }
-    .titulo-bloco h1 { font-size: 23px; color: var(--azul-escuro); font-weight: 800; letter-spacing: -0.02em; }
-    .titulo-bloco p { font-size: 13px; color: var(--suave); margin-top: 3px; }
-    .instituicao { text-align: right; font-size: 13px; color: var(--suave); line-height: 1.35; }
+    .titulo-bloco h1 { font-size: 20px; color: var(--azul-escuro); font-weight: 800; letter-spacing: -0.02em; }
+    .titulo-bloco p { font-size: 11.5px; color: var(--suave); margin-top: 1px; }
+    .instituicao { text-align: right; font-size: 11.5px; color: var(--suave); line-height: 1.3; }
     .instituicao b { color: var(--azul-escuro); }
 
     .conteudo {
       display: grid;
-      grid-template-columns: 630px 1fr;
-      gap: 22px;
+      grid-template-columns: 660px 1fr;
+      gap: 16px;
       flex: 1;
       min-height: 0;
     }
@@ -60,63 +61,62 @@
     .painel-texto {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      font-size: 12.5px;
-      line-height: 1.36;
+      gap: 5px;
+      font-size: 15px;
+      line-height: 1.28;
       color: #1E293B;
     }
 
     .card {
       background: var(--cinza-bg);
       border: 1px solid var(--borda);
-      border-radius: 8px;
-      padding: 10px 14px;
+      border-radius: 6px;
+      padding: 5px 9px;
     }
 
     .card h3 {
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 700;
-      margin-bottom: 5px;
+      margin-bottom: 2px;
       display: flex;
       align-items: center;
       gap: 6px;
     }
 
-    .card-tema { border-left: 5px solid var(--verde); background: #F0FDF4; }
+    .card-tema { border-left: 4px solid var(--verde); background: #F0FDF4; }
     .card-tema h3 { color: var(--verde); }
 
-    .card-vencedor { border-left: 5px solid var(--azul-claro); background: #EFF6FF; }
+    .card-modelo { border-left: 4px solid var(--roxo); background: #FAF5FF; }
+    .card-modelo h3 { color: #6B21A8; }
+
+    .card-vencedor { border-left: 4px solid var(--azul-claro); background: #EFF6FF; }
     .card-vencedor h3 { color: var(--azul-escuro); }
 
-    .card-sinais { border-left: 5px solid var(--dourado); background: #FFFDF5; }
+    .card-sinais { border-left: 4px solid var(--dourado); background: #FFFDF5; }
     .card-sinais h3 { color: #9A6B00; }
 
-    .card-comparativo { border-left: 5px solid var(--carmim); background: #FEF2F2; }
+    .card-comparativo { border-left: 4px solid var(--carmim); background: #FEF2F2; }
     .card-comparativo h3 { color: var(--carmim); }
 
-    .destaque-verde { color: var(--verde); font-weight: 700; }
-    .destaque-azul { color: var(--azul-claro); font-weight: 700; }
-    .destaque-carmim { color: var(--carmim); font-weight: 700; }
-
-    ul { margin-left: 16px; margin-top: 4px; }
-    li { margin-bottom: 3px; }
+    ul { margin-left: 12px; margin-top: 1px; }
+    li { margin-bottom: 1px; }
 
     .painel-graficos {
       display: flex;
       flex-direction: column;
       border: 1px solid var(--borda);
-      border-radius: 8px;
-      padding: 10px;
+      border-radius: 6px;
+      padding: 6px;
       background: #FFFFFF;
       min-height: 0;
     }
 
     .painel-graficos h4 {
-      font-size: 12px;
+      font-size: 11px;
       color: var(--azul-escuro);
       font-weight: 700;
       text-align: center;
-      margin-bottom: 6px;
+      margin-bottom: 3px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
@@ -125,9 +125,9 @@
       flex: 1;
       width: 100%;
       height: auto;
-      max-height: 620px;
+      max-height: 615px;
       object-fit: contain;
-      border-radius: 6px;
+      border-radius: 4px;
       display: block;
       margin: 0 auto;
     }
@@ -135,12 +135,16 @@
     .legenda-rapida {
       display: flex;
       justify-content: space-around;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 600;
-      margin-top: 6px;
-      padding-top: 6px;
+      margin-top: 3px;
+      padding-top: 3px;
       border-top: 1px dashed var(--borda);
     }
+
+    .destaque-azul { color: var(--azul-claro); font-weight: 700; }
+    .destaque-verde { color: var(--verde); font-weight: 700; }
+    .destaque-carmim { color: var(--carmim); font-weight: 700; }
 
     @media print {
       body { background: transparent; padding: 0; }
@@ -167,38 +171,45 @@
   </header>
 
   <div class="conteudo">
-    <!-- Coluna Esquerda: Diagnóstico Técnico e Decisões -->
+    <!-- Coluna Esquerda: Diagnóstico Técnico e Explicações Completas -->
     <div class="painel-texto">
       
       <!-- Tema -->
       <div class="card card-tema">
         <h3>Tema: Monitoramento e Logística de Arboviroses (InfoDengue)</h3>
-        <p>Previsão temporal de casos a partir de séries climáticas (temperatura e umidade) de 4 polos de MG (Uberlândia, Uberaba, Patos de Minas e Ituiutaba). Arquitetura MLP de 48 camadas com inicialização calibrada (Desafio 2).</p>
+        <p>Previsão temporal de casos a partir de séries climáticas (temperatura e umidade) de 4 polos de MG (Uberlândia, Uberaba, Patos de Minas e Ituiutaba).</p>
       </div>
 
-      <!-- Receita Vencedora -->
+      <!-- Modelo & Arquitetura (Respondendo ao Professor) -->
+      <div class="card card-modelo">
+        <h3>Modelo da Rede & Função de Perda (Loss)</h3>
+        <p>• <b>Arquitetura MLP:</b> Rede profunda de <b>48 camadas</b> com ativação <b>ReLU</b> nas ocultas e inicialização calibrada (Desafio 2), mapeando para uma projeção de saída escalar contínua.</p>
+        <p>• <b>Função de Perda:</b> <b>MSE (Erro Quadrático Médio)</b>. Mede o desvio quadrático entre os casos reais de dengue e as estimativas, penalizando erros grandes de forma rigorosa.</p>
+      </div>
+
+      <!-- Receita Vencedora (Otimizadores e Mecânica) -->
       <div class="card card-vencedor">
-        <h3>Receita Vencedora: Muon (η = 0.01) + Agenda Cosseno</h3>
-        <p>• <b>Por que o Muon?</b> Aplica ortogonalização de Newton-Schulz no momento das camadas ocultas 2-D (UV<sup>T</sup>). Equaliza o aprendizado em todas as direções singulares, evitando a estagnação típica de redes profundas sem BatchNorm.</p>
-        <p>• <b>Por que Agenda Cosseno?</b> Permite explorar o relevo de perda no início e decai suavemente até zero, assentando os pesos com precisão no mínimo local.</p>
-        <p>• <b>Por que η = 0.01?</b> Taxa calibrada para matrizes ortogonalizadas; produziu menor perda final (1.50 × 10<sup>5</sup>) sem inflar a norma dos parâmetros.</p>
+        <h3>Receita Vencedora: Muon (η = 0.01) + AdamW + Cosseno</h3>
+        <p>• <b>Por que o Muon?</b> Aplica ortogonalização de Newton-Schulz nas matrizes 2D ocultas (UV<sup>T</sup>), equalizando o aprendizado em todas as direções sem precisar de BatchNorm.</p>
+        <p>• <b>Separação Híbrida:</b> Como o Muon exige matrizes 2D, os vieses (vetores 1D) e a camada de saída são otimizados em paralelo pelo <b>AdamW</b>.</p>
+        <p>• <b>Resultados (1.47 vs 1.53):</b> A agenda cosseno decai suavemente até zero, permitindo assentar os pesos. A Baseline estacionou em ~1.53 × 10<sup>5</sup>, enquanto a vencedora atingiu a menor perda de <b>1.47 × 10<sup>5</sup></b>.</p>
       </div>
 
-      <!-- Diagnóstico dos Sinais -->
+ <!-- Diagnóstico dos Sinais -->
       <div class="card card-sinais">
-        <h3>Diagnóstico Sustentado pelos Sinais (Leitura Vertical)</h3>
+        <h3>Diagnóstico Sustentado pelos Sinais (O que cada gráfico prova)</h3>
         <ul>
-          <li><b>Perda (L):</b> O Muon Cosseno alcança convergência estável e contínua, superando a Baseline em velocidade e valor final.</li>
-          <li><b>Norma do Gradiente (||g||):</b> Mantida na faixa equilibrada (10<sup>5</sup> ~ 10<sup>6</sup>). Não há picos abruptos nem atenuação precoce para zero.</li>
-          <li><b>Norma dos Parâmetros (||θ||):</b> Estável em ||θ|| ≈ 83 (ao lado de AdamW ≈ 78), confirmando controle efetivo de peso sem deriva descontrolada.</li>
-          <li><b>Razão de Atualização (ρ camada 24):</b> Inicia na faixa ideal (≈ 10<sup>-2</sup>), transita pela referência saudável (10<sup>-3</sup>) e decai controladamente para 10<sup>-5</sup> no fim da agenda cosseno.</li>
+          <li><b>Perda (O Erro Real):</b> Mede a falha da previsão. A receita vencedora teve convergência contínua, profunda e superou a baseline.</li>
+          <li><b>Norma do Gradiente (||g|| - A Força de Correção):</b> Mostra a intensidade do ajuste. Manteve-se na faixa equilibrada (10<sup>5</sup> ~ 10<sup>6</sup>), sem os saltos que causam divergência.</li>
+          <li><b>Norma dos Parâmetros (||θ|| - O Tamanho dos Pesos):</b> Indica estabilidade estrutural. Ficou plana e estável (≈ 83), provando que a rede não inflou nem sofreu overfitting.</li>
+          <li><b>Razão de Atualização (ρ - O Ritmo de Mudança):</b> Monitoriza o tamanho do passo. Desceu de 10<sup>-2</sup> para 10<sup>-5</sup>, guiada cirurgicamente pela agenda cosseno.</li>
         </ul>
       </div>
 
       <!-- Comparativo / Instável -->
       <div class="card card-comparativo">
         <h3>Otimizador Instável: Muon (η = 0.05 — Passo Excessivo)</h3>
-        <p>Ao elevar o passo para 0.05, os sinais revelam o mecanismo de falha: picos em ||g|| ≥ 10<sup>10</sup> induzem salto violento na perda (10<sup>7</sup>), ||θ|| deforma até 158 e ρ ≥ 10<sup>-2</sup> permanece muito alta, impedindo a rede de convergir.</p>
+        <p>Com passo 0.05, os sinais expõem o colapso: picos em ||g|| ≥ 10<sup>10</sup> geram explosão na perda (10<sup>7</sup>), ||θ|| deforma até 158 e ρ permanece elevada, impedindo a convergência.</p>
       </div>
 
     </div>
